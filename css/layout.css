@@ -393,18 +393,22 @@ section + section {
 }
 
 /* Force SVG to render */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  overflow: visible;
+}
+
 .hero-image {
   width: 420px;
   max-width: 100%;
   height: auto;
   display: block;
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
 }
 
-/* Ensure container has space */
-.hero-visual {
-  min-height: 320px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible;
-}
+
