@@ -345,45 +345,7 @@ section + section {
 .navbar nav a i {
   font-size: 0.85rem;
   opacity: 0.85;
-}
-/* FORCE HERO IMAGE TO DISPLAY */
-.hero-visual {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
 
-.hero-visual img {
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  opacity: 1 !important;
-  transform: none !important;
-}
-.hero-visual,
-.hero-visual * {
-  display: block !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: none !important;
-  position: static !important;
-  z-index: 999 !important;
-  
-}
-/* ================= HERO IMAGE FIX ================= */
-
-.hero-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-visual img {
-  width: 100%;
-  max-width: 420px;   /* controls image size */
-  height: 27px;
-  display: block;
-}
 /* ================= HERO SVG HARD FIX ================= */
 
 /* Remove animation influence */
@@ -410,5 +372,6 @@ section + section {
   transform: none !important;
   filter: none !important;
 }
+
 
 
