@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Maurya | Developer & AI Enthusiast</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- SEO -->
+  <meta
+    name="description"
+    content="Ayush Maurya | Developer, AI Engineer & Cloud Enthusiast. Portfolio showcasing projects, skills, and experience."
+  />
+</head>
+
+<body>
+  <canvas id="starfield"></canvas>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <h1 class="logo">Ayush</h1>
+      <nav>
+        <a href="#hero"><i class="fas fa-home"></i> Home</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#skills"><i class="fas fa-layer-group"></i> Skills</a>
+        <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+        <a href="#experience"><i class="fas fa-tree"></i> Experience</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero-section reveal">
+    <div class="container hero-grid">
+
+      <!-- LEFT -->
+      <div class="hero-content">
+        <h3 class="hero-intro"><b>Hello, I’m</b></h3>
+
+        <h1 class="hero-title">
+          Ayush <span>Maurya</span>
+        </h1>
+
+        <h4 class="hero-tagline">
+            <span id="typed-text"></span>
+        </h4>
+
+
+        <p class="hero-description mb-32">
+          A B.Tech CSE (Cyber Security) student passionate about backend
+          development, AI technologies, and building secure, scalable systems
+          using modern tools and cloud platforms.
+        </p>
+        <br>
+        <div class="hero-actions">
+          <a
+            href="https://drive.google.com/file/d/1n6_tZhCIj1k4104ZdR0PJIR5bLEF0p7b/view?usp=sharing"
+            class="btn primary"
+            target="_blank"
+          >
+            View Resume
+          </a>
+          <a href="#contact" class="btn secondary">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-visual no-reveal">
+        <img
+            class="hero-image"
+            src="E:\User_Folder\Portfolio\assests\images\hero.png"
+            alt="Developer Illustration"
+        >
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about-section reveal">
+    <div class="container about-grid">
+
+      <!-- LEFT -->
+      <div class="about-content">
+        <h2 class="about-title">
+          About <span>Me</span>
+        </h2>
+
+        <p class="about-text">
+          I’m <strong>Ayush Maurya</strong>, a B.Tech CSE (Cyber Security) student
+          with a deep interest in <span>backend development</span>,
+          <span>AI technologies</span>, and
+          <span>secure system design</span>.
+        </p>
+
+        <p class="about-text">
+          I enjoy building reliable and scalable systems by combining
+          programming, cloud fundamentals, data, and security principles.
+          My journey started with C and Python and gradually expanded into
+          JavaScript, cloud computing, and system design.
+        </p>
+
+        <p class="about-text">
+          I believe in <strong>learning by doing</strong> — building projects,
+          contributing to open source, participating in programs, and
+          continuously improving as an engineer.
+        </p>
+      </div>
+
+      <!-- RIGHT CARD -->
+      <div class="about-card">
+        <h3>What I Focus On</h3>
+        <ul>
+          <li>Backend Engineering & APIs</li>
+          <li>Cyber Security & Secure Systems</li>
+          <li>AI Tools & Prompt Engineering</li>
+          <li>Cloud Platforms (Google Cloud)</li>
+          <li>Open Source & Hackathons</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="skills-section reveal">
+    <div class="container">
+      <h2 class="section-title">
+        My <span>Skills</span>
+      </h2>
+
+      <div class="skills-tabs">
+        <button class="skill-tab active" data-filter="all">All</button>
+        <button class="skill-tab" data-filter="language">Programming</button>
+        <button class="skill-tab" data-filter="web">Web Dev</button>
+        <button class="skill-tab" data-filter="database">Database</button>
+        <button class="skill-tab" data-filter="tools">Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-category="language">C</div>
+        <div class="skill-card" data-category="language">C++</div>
+        <div class="skill-card" data-category="language">Java</div>
+        <div class="skill-card" data-category="language">JavaScript</div>
+        <div class="skill-card" data-category="language">Python</div>
+
+        <div class="skill-card" data-category="web">HTML</div>
+        <div class="skill-card" data-category="web">CSS</div>
+        <div class="skill-card" data-category="web">Node.js</div>
+        <div class="skill-card" data-category="web">Express</div>
+        <div class="skill-card" data-category="web">REST APIs</div>
+
+        <div class="skill-card" data-category="database">MongoDB</div>
+        <div class="skill-card" data-category="database">SQL</div>
+
+        <div class="skill-card" data-category="tools">Git & GitHub</div>
+        <div class="skill-card" data-category="tools">VS Code</div>
+        <div class="skill-card" data-category="tools">NPM</div>
+        <div class="skill-card" data-category="tools">Vercel</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section alt-bg reveal">
+    <div class="container">
+      <h2 class="section-title">Experience & Programs</h2>
+      <div class="timeline" id="experienceTimeline"></div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact-section reveal">
+    <h2 class="contact-title">
+        Get in <span>Touch</span>
+    </h2>
+
+    <div class="container contact-wrapper">
+
+      <!-- LEFT -->
+      <div class="contact-left">
+        <h3 class="contact-title">Contact Information</h3>
+        <br>
+        <div class="contact-list">
+          <div class="contact-row">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <span>Email</span>
+              <a href="mailto:mauryaayush631@gmail.com">
+                mauryaayush631@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <span>Phone</span>
+              <a href="tel:+919984249543">+91 9984249543</a>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <span>Location</span>
+              <p>Greater Noida, UP, India</p>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="find-me">Connect With Me</h4>
+        <div class="contact-socials">
+          <a href="https://github.com/Ayushmaurya01" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://wa.me/919984249543" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ayush-maurya-93a91b288/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="contact-right">
+        <div class="contact-card">
+          <h3>Send a Message</h3>
+          <br>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn primary">
+              Send Message →
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2026 Ayush Maurya. Built with ❤️ and AI.</p>
+    <a href="#hero" class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+</a>
+
+  </footer>
+
+  <!-- JS -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

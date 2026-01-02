@@ -1,0 +1,38 @@
+:root {
+  /* ================= COLORS : DEEP ROYAL PURPLE THEME ================= */
+
+  /* Backgrounds */
+  --color-bg: #0b0718;              /* Very dark purple (main background) */
+  --color-bg-alt: #120c25;          /* Slightly lighter section bg */
+  --color-surface: #1a1236;         /* Cards / surfaces */
+
+  /* Primary Palette */
+  --color-primary: #7C5CFC;         /* Royal purple (main accent) */
+  --color-secondary: #6A4CF6;       /* Darker purple (hover / secondary) */
+  --color-accent: #9B8CFF;          /* Soft glow / highlight */
+
+  /* Text */
+  --color-text-main: #f2efff;       /* Near-white with purple tint */
+  --color-text-light: #cfc8ff;      /* Muted purple text */
+  --color-border: rgba(155, 140, 255, 0.28);
+
+  /* Buttons */
+  --btn-primary-bg: linear-gradient(135deg, #7C5CFC, #6A4CF6);
+  --btn-primary-text: #ffffff;
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: #9B8CFF;
+
+  /* Typography */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.7;
+
+  /* Layout */
+  --section-padding: 5rem;
+  --container-width: 1100px;
+  --radius: 16px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.35s ease;
+}

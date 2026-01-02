@@ -1,0 +1,371 @@
+/* ================= BUTTONS ================= */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: all var(--transition-medium);
+}
+
+.btn.primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.btn.secondary {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn.secondary:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+/* ================= CARD / PROJECTS ================= */
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(26, 18, 54, 0.95),
+    rgba(11, 7, 24, 0.95)
+  );
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 1.8rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 26px rgba(155, 140, 255, 0.35);
+}
+
+/* ================= SKILLS ================= */
+.skill-card {
+  background: linear-gradient(
+    180deg,
+    rgba(26, 18, 54, 0.95),
+    rgba(11, 7, 24, 0.9)
+  );
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-text-main);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 22px rgba(155, 140, 255, 0.35);
+}
+
+/* ================= EXPERIENCE ================= */
+.timeline-item {
+  background: linear-gradient(
+    180deg,
+    rgba(26, 18, 54, 0.95),
+    rgba(11, 7, 24, 0.9)
+  );
+  padding: 1.4rem;
+  border-radius: 14px;
+  border-left: 4px solid var(--color-primary);
+}
+
+/* ================= CONTACT LEFT ================= */
+.contact-left {
+  background: radial-gradient(
+    ellipse at top,
+    rgba(124, 92, 252, 0.18),
+    rgba(11, 7, 24, 0.95)
+  );
+  border-radius: 18px;
+  padding: 2.5rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(155, 140, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.contact-text span {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-bottom: 0.25rem;
+}
+
+.contact-text p,
+.contact-text a {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text-main);
+  transition: all 0.3s ease;
+}
+
+.contact-text a:hover {
+  color: var(--color-accent);
+  transform: translateX(4px);
+  text-shadow: 0 0 10px rgba(155, 140, 255, 0.6);
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.contact-socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  color: #ffffff;
+  transition: all 0.35s ease;
+}
+
+.contact-socials a:hover {
+  transform: translateY(-6px) scale(1.08);
+}
+
+/* GitHub */
+.contact-socials a:hover:has(.fa-github) {
+  border-color: #000000;
+  box-shadow: 0 0 18px rgba(0,0,0,0.6);
+}
+
+.contact-socials a:hover .fa-github {
+  color: #000000;
+}
+
+/* LinkedIn */
+.contact-socials a:hover:has(.fa-linkedin-in) {
+  border-color: #0A66C2;
+  box-shadow: 0 0 18px rgba(10,102,194,0.7);
+}
+
+.contact-socials a:hover .fa-linkedin-in {
+  color: #0A66C2;
+}
+
+/* WhatsApp */
+.contact-socials a:hover:has(.fa-whatsapp) {
+  border-color: #25D366;
+  box-shadow: 0 0 18px rgba(37,211,102,0.7);
+}
+
+.contact-socials a:hover .fa-whatsapp {
+  color: #25D366;
+}
+
+/* ================= SECTION TITLES ================= */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-title span {
+  color: var(--color-primary);
+}
+
+/* ================= SKILL TABS ================= */
+.skills-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.skill-tab {
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-main);
+  cursor: pointer;
+}
+
+.skill-tab.active {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+/* ================= REVEAL ================= */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= FOOTER ================= */
+.footer p {
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+/* Scroll to Top Arrow */
+.scroll-top {
+  position: relative;              /* NOT absolute anymore */
+  margin: 1.2rem auto 0;           /* sits below the line */
+  width: 42px;
+  height: 42px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(124, 92, 252, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-top:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 35px rgba(124, 92, 252, 0.9);
+}
+/* HERO IMAGE FIX */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-visual img {
+  max-width: 100%;
+  height: 420px;          /* 👈 adjust this value */
+  object-fit: contain;    /* 🔥 MOST IMPORTANT */
+}
+/* ================================
+   HERO IMAGE ANIMATION
+================================ */
+
+.hero-visual img {
+  max-width: 100%;
+  height: 420px;                 /* adjust if needed */
+  object-fit: contain;
+
+  animation: floatHero 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(138, 92, 246, 0.35));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover interaction (desktop only feel) */
+.hero-visual img:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 32px rgba(138, 92, 246, 0.55));
+}
+
+/* Floating keyframes */
+@keyframes floatHero {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 768px) {
+  .hero-visual img {
+    height: 300px;
+    animation: none; /* cleaner on mobile */
+  }
+}
+/* ================================
+   TYPING TEXT STYLE
+================================ */
+
+.hero-tagline {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: #cfcfe6;
+}
+
+#typed-text {
+  color: #d3d1d6; /* purple */
+  font-weight: 600;
+  border-right: 2px solid #ebe8f2;
+  padding-right: 4px;
+  animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #d6d3dc; }
+}
+/* ================================
+   HERO IMAGE EFFECT
+================================ */
+
+.hero-visual img {
+  max-width: 100%;
+  height: 420px;
+  object-fit: contain;
+
+  animation: floatHero 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.35));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.hero-visual img:hover {
+  transform: scale(1.05) rotate(0.5deg);
+  filter: drop-shadow(0 0 40px rgba(139, 92, 246, 0.6));
+}
+
+@keyframes floatHero {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
+}
+@media (max-width: 768px) {
+  .hero-visual img {
+    height: 300px;
+    animation: none;
+  }
+}
+

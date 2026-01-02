@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title {
+    text-align: center;
+  }
+
+  .contact-socials {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    text-align: center;
+  }
+
+  .about-card {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding: 7rem 0 4rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width: 600px) {
+  .skills-tabs {
+    gap: 0.6rem;
+  }
+
+  .skill-tab {
+    padding: 0.4rem 1.1rem;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 900px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    transform: none;
+  }
+}
+@media (max-width: 992px) {
+  .hero-visual img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-visual img {
+    height: 260px;
+  }
+}

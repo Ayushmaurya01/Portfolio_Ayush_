@@ -1,0 +1,410 @@
+/* ================= NAVBAR ================= */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  transition: color var(--transition-fast);
+}
+
+.navbar nav a:hover {
+  color: var(--color-primary);
+}
+
+
+/* ================= HERO ================= */
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 9rem 0 6rem;
+  background: linear-gradient(
+    135deg,
+    rgba(124, 92, 252, 0.08),
+    rgba(155, 140, 255, 0.06)
+  );
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.hero-intro {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.hero-title {
+  font-size: 3rem;
+  margin: 0.3rem 0;
+}
+
+.hero-text h1 {
+  margin: 0.5rem 0;
+}
+
+.tagline {
+  font-size: 0.95rem;              /* smaller than name */
+  font-weight: 500;
+  opacity: 0.85;
+  margin-top: 0.6rem;
+  letter-spacing: 0.5px;
+}
+
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+
+.hero-content {
+  margin-top: 2rem;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+/* ================= ABOUT ================= */
+.about-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about-title span {
+  color: var(--color-primary);
+}
+
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 5.5rem; /* more space between left & right */
+  align-items: start;
+}
+
+.about-text {
+  margin-bottom: 1.6rem;
+  line-height: 1.7;
+}
+
+/* Bridge tagline between description & focus */
+.about-tagline {
+  text-align: center;
+  margin: 3.5rem 0 4rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  position: relative;
+}
+
+.about-tagline::before,
+.about-tagline::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.about-tagline::before {
+  left: calc(50% - 150px);
+}
+
+.about-tagline::after {
+  right: calc(50% - 150px);
+}
+
+/* Right-side focus card */
+.about-card {
+  background: rgba(11, 7, 24, 0.85);
+  border-radius: 20px;
+  padding: 2.3rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+  margin-left: 1.8rem; /* shifts right content further */
+}
+
+.about-card ul {
+  margin-top: 1.2rem;
+}
+
+.about-card li {
+  margin-bottom: 0.85rem;
+  line-height: 1.6;
+}
+
+/* ================= SKILLS / PROJECTS ================= */
+.skills-grid,
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ================= EXPERIENCE ================= */
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ================= CONTACT ================= */
+.contact-center {
+  text-align: center;
+}
+
+.contact-grid,
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .contact-grid,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.contact-title span {
+  color: var(--color-primary); /* purple */
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  padding: 2.6rem 1rem 1.8rem;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* ================= ALT BACKGROUND ================= */
+.alt-bg {
+  background: radial-gradient(
+    ellipse at top,
+    rgba(124, 92, 252, 0.18),
+    var(--color-bg)
+  );
+}
+/* ================= HOME / HERO FIXES ================= */
+
+/* "Hello, I'm" text */
+.hero-text h2 {
+  font-size: 1.1rem;
+  color: var(--color-primary); /* purple */
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+/* Main name stays big – no change needed */
+
+/* Tagline under name */
+.tagline {
+  font-size: 0.95rem;       /* smaller than name */
+  font-weight: 500;
+  opacity: 0.85;
+  margin-top: 0.4rem;
+  letter-spacing: 0.4px;
+}
+
+/* Description spacing */
+.hero-text p {
+  margin-top: 1.2rem;
+  margin-bottom: 2.2rem;   /* space before buttons */
+  line-height: 1.7;
+}
+
+/* Buttons spacing */
+.hero-actions {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+/* =========================================================
+   HOME / HERO FINAL FIX (FORCE OVERRIDE)
+   ========================================================= */
+
+/* "Hello, I'm" — force purple */
+.hero .hero-text h2 {
+  color: var(--color-primary) !important;
+  font-size: 1.1rem !important;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Tagline — make it clearly smaller */
+.hero .tagline {
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  margin-top: 0.3rem;
+}
+
+/* Description spacing */
+.hero .hero-text p {
+  margin-top: 1.4rem !important;
+  margin-bottom: 2.6rem !important; /* MORE space before buttons */
+  line-height: 1.7;
+}
+
+/* Buttons spacing — push them down */
+.hero .hero-actions {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 0.8rem !important;
+}
+.navbar nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.navbar nav a i {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+/* FORCE HERO IMAGE TO DISPLAY */
+.hero-visual {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  opacity: 1 !important;
+  transform: none !important;
+}
+.hero-visual,
+.hero-visual * {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  position: static !important;
+  z-index: 999 !important;
+  
+}
+/* ================= HERO IMAGE FIX ================= */
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 420px;   /* controls image size */
+  height: 27px;
+  display: block;
+}
+/* ================= HERO SVG HARD FIX ================= */
+
+/* Remove animation influence */
+.no-reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Force SVG to render */
+.hero-image {
+  width: 420px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure container has space */
+.hero-visual {
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
