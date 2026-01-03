@@ -165,12 +165,12 @@
 
 /* GitHub */
 .contact-socials a:hover:has(.fa-github) {
-  border-color: #000000;
-  box-shadow: 0 0 18px rgba(0,0,0,0.6);
+  border-color: #faf2f2;
+  box-shadow: 0 0 18px rgba(237,235,235,0.6);
 }
 
 .contact-socials a:hover .fa-github {
-  color: #000000;
+  color: #faf2f2;
 }
 
 /* LinkedIn */
@@ -368,4 +368,5 @@
     animation: none;
   }
 }
+
 
